@@ -23,9 +23,9 @@
             </div>
 
             <!-- <a href="toggleHeating" class="heatingContainer"><button class="heat" id="heatingToggle"></button></a> -->
-            <textarea readonly name="command-history" class="command-history" rows="10" cols="30"></textarea>
+            <textarea readonly class="command-history" id="cmd01" rows="10" cols="30"></textarea>
             <form action="{{url_for('submit')}}" method="post">
-                <input type="text" class="input" name="command">
+                <input type="text" class="input" name="command" autocomplete="off">
                 <input type="submit" hidden>
             </form>
         </div>
@@ -34,6 +34,34 @@
     <div class="info">
     <mark class="white">state=</mark>{{w_state}}
     </div>
+
+    <script>
+        function scrollLogToBottom(){
+            textarea = document.getElementById("cmd01")
+            textarea.scrollTop = textarea.scrollHeight;
+        }
+
+
+        textarea = document.getElementById("cmd01")
+        data = {{w_cmds|tojson|safe}}
+        for(rowid in data){
+            textarea.value += '>'
+            textarea.value += ' [ '
+            for(collid in data[rowid]){
+                if(collid > 0){
+                    if(collid == 3){
+                        textarea.value+='] '    
+                    }
+
+                    textarea.value += data[rowid][collid] + ' '
+                }
+            }
+
+            textarea.value += "\n"
+        }
+        scrollLogToBottom()
+        
+    </script>
 </body>
 
 </html>
