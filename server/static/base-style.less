@@ -1,0 +1,72 @@
+@bgcolor: #0f0f0f;
+@text-input-color: #3d3d3d;
+
+body{
+    background-color: @bgcolor;
+}
+
+.logoSvg{
+    width: auto;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh - 10px;
+}
+
+@keyframes idle {
+    from{opacity: 100%;}
+    to{opacity: 0%;}
+}
+
+.idleLine{
+    animation-name: idle;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+}
+
+.heat{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,150px);
+}
+
+.info{
+    font-family: 'VT323', monospace;
+    color:red;
+    font-size: 50px;
+}
+
+mark.white{
+    color: white;
+    background: none;
+}
+
+.input{
+    height:30px;
+    background-color: @text-input-color;
+    border-color: gray;
+    color: rgb(255, 255, 255);
+}
+.input:focus{
+    outline: none;
+}
+
+.command-history{
+    height:140px;
+    resize: none;
+    background-color: black;
+    border-color: gray;
+}
+.command-history:focus{
+    outline:none;
+}

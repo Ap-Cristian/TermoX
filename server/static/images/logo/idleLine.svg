@@ -1,0 +1,29 @@
+<svg width="90" height="80" viewBox="0 0 90 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="10" height="10" transform="translate(0 50)" fill="white"/>
+<rect width="10" height="10" transform="translate(10 50)" fill="white"/>
+<rect width="10" height="10" transform="translate(20 50)" fill="white"/>
+<rect width="10" height="10" transform="translate(30 50)" fill="white"/>
+<rect width="10" height="10" transform="translate(40 50)" fill="white"/>
+<rect width="10" height="10" transform="translate(50 50)" fill="white"/>
+<rect width="10" height="10" transform="translate(60 50)" fill="white"/>
+<rect width="10" height="10" transform="translate(0 60)" fill="white"/>
+<rect width="10" height="10" transform="translate(10 60)" fill="white"/>
+<rect width="10" height="10" transform="translate(20 60)" fill="white"/>
+<rect width="10" height="10" transform="translate(30 60)" fill="white"/>
+<rect width="10" height="10" transform="translate(40 60)" fill="white"/>
+<rect width="10" height="10" transform="translate(50 60)" fill="white"/>
+<rect width="10" height="10" transform="translate(60 60)" fill="white"/>
+<rect width="10" height="10" transform="translate(60 70)" fill="#4E4E4E"/>
+<rect width="10" height="10" transform="translate(10 70)" fill="#4E4E4E"/>
+<rect width="10" height="10" transform="translate(0 70)" fill="#4E4E4E"/>
+<rect width="10" height="10" transform="translate(20 70)" fill="#4E4E4E"/>
+<rect width="10" height="10" transform="translate(30 70)" fill="#4E4E4E"/>
+<rect width="10" height="10" transform="translate(40 70)" fill="#4E4E4E"/>
+<rect width="10" height="10" transform="translate(50 70)" fill="#4E4E4E"/>
+<rect width="10" height="10" transform="translate(70 50)" fill="white"/>
+<rect width="10" height="10" transform="translate(70 60)" fill="white"/>
+<rect width="10" height="10" transform="translate(70 70)" fill="#4E4E4E"/>
+<rect width="10" height="10" transform="translate(80 50)" fill="white"/>
+<rect width="10" height="10" transform="translate(80 60)" fill="white"/>
+<rect width="10" height="10" transform="translate(80 70)" fill="#4E4E4E"/>
+</svg>

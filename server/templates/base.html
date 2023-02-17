@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<title>{% block title %}{% endblock %} - TermoX -</title>
+
+<head>
+    <link rel="stylesheet/less" type="text/css" href="{{url_for('static', filename='base-style.less')}}">
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="center">
+        <div class="grid">
+            <div class="logo">
+                <img src="{{url_for('static', filename='/images/logo/TermoX.svg')}}" alt="" class="logoSvg">
+                <img src="{{url_for('static', filename='images/logo/idleLine.svg')}}" alt="" class="idleLine">
+            </div>
+
+            <!-- <a href="toggleHeating" class="heatingContainer"><button class="heat" id="heatingToggle"></button></a> -->
+            <textarea readonly name="command-history" class="command-history" rows="10" cols="30"></textarea>
+            <form action="{{url_for('submit')}}" method="post">
+                <input type="text" class="input" name="command">
+                <input type="submit" hidden>
+            </form>
+        </div>
+    </div>
+
+    <div class="info">
+    <mark class="white">state=</mark>{{w_state}}
+    </div>
+</body>
+
+</html>
